@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jambo Junction</title>
+  <link rel="stylesheet" href="../assets/main.css">
+</head>
+<body>
+  <h1>Jambo Junction</h1>
+
+  <!-- Form to create a new Jambo -->
+  <form id="newJamboForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" required>
+    
+    <label for="description">Description:</label>
+    <textarea id="description" required></textarea>
+    
+    <!-- Input for image upload: -->
+    <label for="image">Image:</label>
+    <input type="file" id="image" accept="image/*">
+    
+    <label for="duration">Duration (in seconds):</label>
+    <input type="number" id="duration" required>
+
+    <button type="button" onclick="createJambo()">Create Jambo</button>
+  </form>
+
+  <!-- List of Jambo overviews -->
+  <ul id="jamboList"></ul>
+
+  <!-- JavaScript code to interact with the Motoko canister -->
+  <script src="../src/index.js"></script>
+</body>
+</html>

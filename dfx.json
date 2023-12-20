@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "jicproject_backend": {
+      "main": "src/jicproject_backend/main.mo",
+      "type": "motoko"
+    },
+    "jicproject_frontend": {
+      "dependencies": [
+        "jicproject_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/jicproject_frontend/src/index.html"
+      },
+      "source": [
+        "src/jicproject_frontend/assets",
+        "dist/jicproject_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

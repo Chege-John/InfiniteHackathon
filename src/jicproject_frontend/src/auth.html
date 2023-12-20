@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/auth.css">
+  <title>Jambo Junction</title>
+</head>
+<body>
+  <header>
+    <h1>Jambo Junction</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Authentication Form -->
+    <section id="auth-section">
+      <h2>Login / Register</h2>
+      <form id="auth-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login / Register</button>
+      </form>
+    </section>
+
+    <!-- User Profile -->
+    <section id="profile-section" class="hidden">
+      <h2>Welcome, User!</h2>
+      <div id="user-profile">
+        <!-- Profile details will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Jambo Junction</p>
+  </footer>
+
+  <script src="../src/auth.js"></script>
+</body>
+</html>
